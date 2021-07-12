@@ -1,0 +1,227 @@
+:root {
+	--cor-rosa: #FF1D4D;
+	--cor-azul: #1C366E;
+	--cor-verde: #BED441;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--cor-azul);
+}
+
+.menu a {
+	color: var(--cor-azul);
+	text-decoration: none;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.menu a:hover {
+	color: var(--cor-verde);
+}
+
+#logo {
+	width: 215px;
+	height: 65px;
+}
+
+.head {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "Barlow", sans-serif;
+	background-color: #fff;
+	height: 85px;
+	font-weight: bold;
+}
+
+.menu {	
+	display: flex;
+	position: relative;
+}
+
+.menu li {
+	letter-spacing: 3px;
+	margin-left: 30px;
+	list-style: none;
+}
+
+.menu ul {
+	display:  none;
+	position: absolute;
+	padding-top: 10px;
+}
+
+.menu li:hover ul {
+	display: block;
+	background-color: #fff;
+	text-align: left;
+}
+
+.menu li:hover ul li {
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#titulo {
+	font-family: "Barlow", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+
+/*slide*/
+
+button.slick-prev {
+	font-size: 0px;
+	border: none;
+	width: 65px;
+	height: 90px;
+	z-index: 9;
+	background-color: transparent;
+	position: absolute;
+	top: 60%;
+	left: 5%;
+	background-image: url(img/prev.png);
+}
+
+button.slick-next {
+	font-size: 0px;
+	border: none;
+	width: 65px;
+	height: 90px;
+	z-index: 9;
+	background-color: transparent;
+	position: absolute;
+	top: 60%;
+	right: 5%;
+	background-image: url(img/next.png);
+}
+
+.slick-initialized {
+	overflow: hidden;
+}
+
+.slick-dots li button {
+	font-size: 0px;
+	border: 4px solid #fff;
+	width: 18px;
+	height: 18px;
+	background: transparent;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slick-dots {
+	margin: 0 auto;
+	width: 50%;
+	position: absolute;
+	left: 47%;
+	top: 550px;
+}
+
+li.slick-active button {
+	background: var(--cor-azul);
+}
+
+.slick-dots li {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+/*funcionarios*/
+
+div.cbReportSection_720c2f9a712b12 {
+    display: inline-block;
+    width: 100%;
+}
+
+nav.cbResultSetActionsContainerCellspacing.cbResultSetActionsContainer.cbActionPanel{
+    background-color: transparent;
+
+}
+
+nav.cbResultSetActionsContainerCellspacing.cbResultSetActionsContainer.cbActionPanel label.cbResultSetSortLabel {
+	font-family: "Barlow", sans-serif;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+select#asorting.cbResultSetSortControl {
+	font-family: "Barlow", sans-serif;
+}
+
+select#asorting.cbResultSetSortControl option {
+	font-family: "Barlow", sans-serif;
+}
+
+div.cbRecordCountMessage.Center.cbResultSetRecordMessage{
+	font-family: "Barlow", sans-serif;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+dt.cbResultSetListViewDataLabel.cbResultSetNestedAlign {
+	font-family: "Barlow", sans-serif;
+	color: var(--cor-azul);
+	font-size: 16px;
+}
+
+dd.cbResultSetData.cbResultSetNestedAlign {
+	font-family: "Barlow", sans-serif;
+	color: #000;
+	font-size: 16px;
+}
+
+section#cbColumnarReport.cbReportSection_b6f3af160b5db3.cbReportSpa {
+	display: block;
+}
+
+a.cbResultSetActionsLinks {
+	font-family: "Barlow", sans-serif;
+	color: var(--cor-azul);
+	font-size: 16px;
+}
+
+div#pnl3_70142fb1420618.cbResultSetPanelColumnarRAContainer:hover{
+	background: var(--cor-verde);
+}
+/*editar funcionario*/
+
+span.cbFormNavigationCell.cbFormNavigationMessage{
+	font-family: "Barlow", sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input#JumpToInputBottom_15f4bd0b1bba1f.cbFormJumpToTextField {
+	font-family: "Barlow", sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+div.cbFormLabelCell.cbFormLabel.cbFormBlock5_3971bf143446ef {
+	font-family: "Barlow", sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*grafico produtividade*/
+
+text.g.highcharts-axis-labels.highcharts-xaxis-labels {
+	font-family: "Barlow", sans-serif;
+	font-size: 14px;
+}
